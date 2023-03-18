@@ -1,5 +1,5 @@
 // link to page creation
-const generateHTML = require("./src/generateHTML");
+const generateHTML = require("./src/util");
 
 //team profile
 const Employee = require("./lib/Employee");
@@ -58,14 +58,14 @@ const addManager = () => {
     type: "input",
     name: "managerOfficeNumber",
     message: "What is the manager's office number?"
-    validate: nameInput => {
-      if  (isNaN(nameInput)) {
-          console.log ('Please enter an office number!')
-          return false; 
-      } else {
-          return true;
-      }
-  }
+    validate: (nameInput) => {
+        if (isNaN(nameInput)) {
+            console.log('Please enter an office number!');
+            return false;
+        } else {
+            return true;
+        }
+    }
 }
 ])
 .then(managerInput => {

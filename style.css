@@ -3,7 +3,7 @@
 }
 
 :root {
-    --primary: lightslategray;
+    --primary: #daabb5;
     --secondary: white;
 }
 
@@ -35,6 +35,5 @@ body {
 .container {
     margin: 100px auto;
     justify-content: space-evenly;
-    display: flex;
-    
+    display: flex; 
 }
