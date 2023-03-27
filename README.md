@@ -5,7 +5,7 @@
 This application was created to build a command-line application that collects employees information and generates a team profile based on user input using the Inquirer module from Node.js and displaying the information on a newly created html web page with a style sheet. This project demonstrates use of OOP and TDD using Jest to conduct unit tests of every part of the code to ensure it would pass each test. 
 
 ## Table of Contents
-*[User Story](#user-story)
+* [User Story](#user-story)
 * [Acceptance Criteria](#acceptance-criteria)
 * [Installation](#installation)
 * [Usage](#usage)
@@ -44,6 +44,7 @@ The user should clone the repository from GitHub and download Node. This applica
 ## Usage 
 Use inquirer from your command line to answer questions about your project.
 View walk through video here 
+<img src='./imge/application-image.png>
 
 ## License 
 This project is license under MIT
@@ -55,16 +56,4 @@ Contributors should read the installation section.
 Run `npm test` to run Jest for tests on constructors. 
 
 ## Questions
-Please contact vpolier@gmail.com. Moore of this project can be seen at https://github.com/vpolier.
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+Please contact vpolier@gmail.com if you have any questions about this project. More of this project can be seen at https://github.com/vpolier.
