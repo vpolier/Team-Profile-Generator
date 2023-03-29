@@ -1,26 +1,28 @@
 {
-    "name": "Employees",
-    "version": "1.0.0",
-    "description": "OOP",
-    "main": "index.js",
-    "directories": {
-      "lib": "lib",
-      "test": "test"
-    },
-    "scripts": {
-      "test": "jest"
-    },
-    "repository": {
-      "type": "",
-      "url": ""
-    },
-    "author": "",
-    "license": "",
-    "homepage": "",
-    "dependencies": {
-      "inquirer": "^6.3.1"
-    },
-    "devDependencies": {
-      "jest": "^24.8.0"
-    }
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "app to create team profile generator ",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolewallace09/team-profile-generator.git"
+  },
+  "author": "Nicole Wallace",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolewallace09/team-profile-generator/issues"
+  },
+  "homepage": "https://github.com/nicolewallace09/team-profile-generator#readme",
+  "devDependencies": {
+    "jest": "^26.0.1"
+  },
+  "dependencies": {
+    "inquirer": "^7.1.0"
   }
+}
