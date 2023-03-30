@@ -1,5 +1,5 @@
 // using Intern constructor
-const Intern = require("../src/Intern");
+const Intern = require("../lib/Intern");
 
 //create Intern object
 test("creates an Intern object", () => {
