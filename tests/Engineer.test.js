@@ -3,9 +3,9 @@ const Engineer = require("../src/Engineer");
 
 //create engineer object
 test("creates an Engineer object", () => {
-    const employee = new Employee("Vanessa", 90, "vpolier@hotmail.com", "vpolier81");
+    const engineer = new Engineer("Vanessa", 90, "vpolier@hotmail.com", "vpolier81");
 
-    expect(engineer.github).toEqual(expect.any(string));
+    expect(engineer.github) .toEqual(expect.any(String));
 });
 
 //gets github from getGithub()
@@ -16,7 +16,7 @@ test('gets engineer github value', () => {
 });
 
 //gets role from getRole()
-test('gets role of engineer', () => {
+test('gets role of employee', () => {
     const engineer = new Engineer("Vanessa", 90, "vpolier@hotmail.com", "vpolier81");
 
     expect(engineer.getRole()).toEqual("Engineer");

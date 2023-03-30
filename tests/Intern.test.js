@@ -3,9 +3,9 @@ const Intern = require("../src/Intern");
 
 //create Intern object
 test("creates an Intern object", () => {
-    const Intern = new Intern("Vanessa", 90, "vpolier@hotmail.com", "vpolier81");
+    const intern = new Intern("Vanessa", 90, "vpolier@hotmail.com", "vpolier81");
 
-    expect(intern.school).toEqual(expect.any(string));
+    expect(intern.school) .toEqual(expect.any(String));
 });
 
 //gets school from getSchool()

@@ -2,13 +2,12 @@
 const Employee = require("../src/Employee");
 
 //create employee object
-test("creates an employee onject", () => {
+test("creates an employee object", () => {
     const employee = new Employee("Vanessa", 90, "vpolier@hotmail.com");
 
-    expect(employee.name).toEqual(expect.any(string));
-    expect(employee.Id).toEqual(expect.any(Number));
-    expect(employee.Email).toEqual(expect.any(string));
-    expect(employee.Role).toEqual(expect.any(string))
+    expect(employee.name).toEqual(expect.any(String));
+    expect(employee.id).toEqual(expect.any(Number));
+    expect(employee.email).toEqual(expect.any(String));
 });
 
 //gets name from getname()
@@ -22,11 +21,11 @@ test('get employee name', () => {
 test('get employee ID', () => {
     const employee = new Employee("Vanessa", 90, "vpolier@hotmail.com");
 
-    expect(employee.getID()).toEqual(expect.any(Number));
+    expect(employee.getId()).toEqual(expect.any(Number));
 });
 
 //gets id from getEmail
-test('get employee email', () => {
+test('gets employee email', () => {
     const employee = new Employee("Vanessa", 90, "vpolier@hotmail.com");
 
     expect(employee.getEmail()).toEqual(expect.stringContaining(employee.email.toString()));
@@ -34,8 +33,7 @@ test('get employee email', () => {
 
 //gets role from getRole()
 test('gets role of employee', () => {
-    const emploryee = new Employee("Vanessa", 90, "vpolier@hotmail.com", "vpolier81");
+    const employee = new Employee("Vanessa", 90, "vpolier@hotmail.com", "vpolier81");
 
     expect(employee.getRole()).toEqual("Employee");
 });
-
