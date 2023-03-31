@@ -30,7 +30,7 @@ const addManager = () => {
     {
       type: "input",
       name: "managerName",
-      message: "What is the manager's name?"
+      message: "What is the manager's name?",
       validate: nameInput => {
         if (nameInput) {
             return true;
@@ -43,7 +43,7 @@ const addManager = () => {
 {
     type: "input",
     name: "managerEmail",
-    message: "What is the manager's email address?"
+    message: "What is the manager's email address?",
     validate: email => {
       valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
       if (valid) {
@@ -57,7 +57,7 @@ const addManager = () => {
 {
     type: "input",
     name: "managerOfficeNumber",
-    message: "What is the manager's office number?"
+    message: "What is the manager's office number?",
     validate: (nameInput) => {
         if (isNaN(nameInput)) {
             console.log('Please enter an office number!');
@@ -69,8 +69,9 @@ const addManager = () => {
 }
 ])
 .then(managerInput => {
-  const {managerName, managerId, managerEmail, managerOfficeNumber} = managerImput;
-  const manager = new Manager (managerName, anagerId, managerEmail, managerOfficeNumber);
+    console.log(managerInput);
+  const { name, id, email, officeNumber } = managerInput;
+  const manager = new Manager (name, id, email, officeNumber);
 
   teamArray.push(manager);
   console.log(manager);
@@ -165,7 +166,7 @@ const addEmployee = () => {
         }
     ])
     .then(employeeData => {
-      // data for employee types 
+      // data for employee types    
 
       let { name, id, email, role, github, school, confirmAddEmployee } = employeeData; 
       let employee; 
