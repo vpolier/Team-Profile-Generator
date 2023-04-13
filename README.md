@@ -39,10 +39,20 @@ THEN I exit the application, and the HTML is generated
 ```
 
 ## Installation 
-The user should clone the repository from GitHub and download Node. This application also requires a file system and inquirer module. If testing is required, this application uses Jest. 
+1. To install application, clone the main project via the HTTP or SSH link on github.
+git clone
+
+2. Once cloned, open up the project folder in your text editor and run the following command in terminal to install all dependencies.
+npm install
+
 
 ## Usage 
 ![alt text](images/application-image.jpg)
+1. While in the main project folder (use 'cd' command if needed) enter the following command to execute the chain of prompts:
+node index
+
+2. Answer all the prompts and once completed, your HTML file will be created.
+
 
 ## License 
 This project is license under MIT
