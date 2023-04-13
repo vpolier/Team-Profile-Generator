@@ -29,7 +29,7 @@ const addManager = () => {
   return inquirer.prompt ([  
     {
       type: "input",
-      name: "managerName",
+      name: "name",
       message: "What is the manager's name?",
       validate: nameInput => {
         if (nameInput) {
@@ -42,7 +42,20 @@ const addManager = () => {
 },
 {
     type: "input",
-    name: "managerEmail",
+    name: "id",
+    message: "Whats the manager's ID?",
+    validate: nameInput => {
+      if (isNaN(nameInput)) {
+        console.log("Please enter the manager's ID!")
+          return palse;
+      } else {
+          return true; 
+      }
+  }
+}
+{
+    type: "input",
+    name: "email",
     message: "What is the manager's email address?",
     validate: email => {
       valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
@@ -56,7 +69,7 @@ const addManager = () => {
 },
 {
     type: "input",
-    name: "managerOfficeNumber",
+    name: "officeNumber",
     message: "What is the manager's office number?",
     validate: (nameInput) => {
         if (isNaN(nameInput)) {
