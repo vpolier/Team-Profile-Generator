@@ -208,7 +208,7 @@ const addEmployee = () => {
 
 // function to generate HTML page file using file system 
 const writeFile = data => {
-  fs.writeFile('./dist/index.html', data, err => {
+  fs.writeFile('./assets/index.html', data, err => {
       // if there is an error 
       if (err) {
           console.log(err);
@@ -219,7 +219,6 @@ const writeFile = data => {
       }
   })
 }; 
-
 addManager()
 .then(addEmployee)
 .then(teamArray => {
