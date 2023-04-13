@@ -1,5 +1,5 @@
 // link to page creation
-const generateHTML = require("./src/util");
+const generateHTML = require("./src/generateHTML");
 
 //team profile
 const Employee = require("./lib/Employee");
@@ -52,7 +52,7 @@ const addManager = () => {
           return true; 
       }
   }
-}
+},
 {
     type: "input",
     name: "email",
